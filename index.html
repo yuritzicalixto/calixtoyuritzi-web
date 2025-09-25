@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio - Yuritzi Calixto</title>
+</head>
+<body>
+  <!-- Fondo partículas -->
+  <div id="tsparticles"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CALIXTO</div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <a href="#" class="btn-contacto">Contacto</a>
+
+      <!-- Icono hamburguesa -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menú móvil -->
+      <div class="nav-mobile" id="nav-mobile">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="subtitle">DISEÑADORA WEB</p>
+      <h1>Yuritzi <br> Calixto</h1>
+      <p class="description">
+        Soy desarrolladora web Front-End con las habilidades para superar desafíos. Aprovecho tecnologías como React/Angular y Node/Express para construir aplicaciones que interactúan con bases de datos SQL y NoSQL.
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="./assets/img/calixto.png" alt="Yuritzi Calixto">
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+   <section class="body">
+   <div class="wrap">
+    <header class="header">
+      <div>
+        <h1>Portafolio — Proyectos Destacados</h1>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="title">
+          <div class="logo" aria-hidden>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="2" stroke="white" stroke-opacity="0.9" stroke-width="1.2"/><path d="M7 18h10" stroke="white" stroke-opacity="0.6" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>App Web — Centro de Reparación</h3>
+            <span>Gestión de procesos y notificaciones push</span>
+          </div>
+        </div>
+
+        <p class="desc">Aplicación web desarrollada con Laravel y Node.js para gestionar recepción, diagnóstico, reparación y entrega de equipos. Incluye notificaciones push para mantener al cliente informado del estado del servicio.</p>
+
+        <div class="techs">
+          <div class="tag">Laravel</div>
+          <div class="tag">Node.js</div>
+          <div class="tag">MySQL</div>
+          <div class="tag">Push API</div>
+        </div>
+
+        <div class="actions">
+          <button class="btn view">Ver mockup</button>
+          <button class="btn code"><a href="https://github.com/yuritzicalixto/compushop-frontend" target="_blank" rel="noopener noreferrer">Código / Detalles</a></button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="title">
+          <div class="logo" aria-hidden>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="3" stroke="white" stroke-opacity="0.9" stroke-width="1.2"/><path d="M4 20c3-4 6-6 8-6s5 2 8 6" stroke="white" stroke-opacity="0.6" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>RA / RV — Ecosistemas de México</h3>
+            <span>Experiencia inmersiva educativa</span>
+          </div>
+        </div>
+
+        <p class="desc">Aplicación de realidad aumentada y virtual creada en Unity que presenta los ecosistemas mexicanos: modelado 3D, interacciones inmersivas y contenido educativo sobre flora y fauna.</p>
+
+        <div class="techs">
+          <div class="tag">Unity</div>
+          <div class="tag">AR / VR</div>
+          <div class="tag">Modelado 3D</div>
+        </div>
+
+        <div class="actions">
+          <button class="btn view">Demo interactiva</button>
+          <button class="btn code"><a href="https://github.com/yuritzicalixto/screen-match" target="_blank" rel="noopener noreferrer">Código / Detalles</a></button>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="title">
+          <div class="logo" aria-hidden>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h6l3-8 3 16 3-10 6-2" stroke="white" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>Unity 2D — Astronauta vs Flotas</h3>
+            <span>Juego 2D con progresión por niveles</span>
+          </div>
+        </div>
+
+        <p class="desc">Videojuego en Unity 2D con tres niveles donde el jugador controla a un astronauta que supera desafíos para llegar a su nave y enfrentarse a flotas alienígenas. Enfoque en diseño de niveles, mecánicas y narrativa.</p>
+
+        <div class="techs">
+          <div class="tag">Unity 2D</div>
+          <div class="tag">C#</div>
+          <div class="tag">Level Design</div>
+        </div>
+
+        <div class="actions">
+          <button class="btn view">Playtest</button>
+          <button class="btn code"><a href="https://github.com/yuritzicalixto/Tez-Match" target="_blank" rel="noopener noreferrer">Código / Detalles</a></button>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <div class="title">
+          <div class="logo" aria-hidden>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="white" stroke-opacity="0.9" stroke-width="1.2"/><path d="M7 12h10" stroke="white" stroke-opacity="0.6" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>Unity 3D — Climas y Cultura Prehispánica</h3>
+            <span>Niveles climáticos con NPCs históricos</span>
+          </div>
+        </div>
+
+        <p class="desc">Aplicación interactiva en Unity 3D con tres niveles (desierto, semi-húmedo, húmedo). Incluye NPCs que narran historias prehispánicas mexicanas y mecánicas de exploración educativa.</p>
+
+        <div class="techs">
+          <div class="tag">Unity 3D</div>
+          <div class="tag">C#</div>
+          <div class="tag">Narrativa</div>
+        </div>
+
+        <div class="actions">
+          <button class="btn view">Vista previa</button>
+          <button class="btn code"><a href="https://github.com/yuritzicalixto/agriguardians-app" target="_blank" rel="noopener noreferrer">Código / Detalles</a></button>
+        </div>
+      </article>
+    </div>
+  </div>
+  </section>
+  <!-- CONTACTO -->
+   <section class="contacto">
+   <section class="contact-section">
+    <!-- Header -->
+    <div class="contact-header">
+      <h1>Contacto</h1>
+      </div>
+
+    <!-- Content -->
+    <div class="contact-content">
+      <!-- Form -->
+      <form class="contact-form">
+        <h2>Envíar un mensaje</h2>        
+        <div class="form-group">
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Company">
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+        
+        <button type="submit">
+          <i class="fa-solid fa-envelope"></i> Enviar Mensaje
+        </button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Ponte en contacto</h2>        
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Ubicación</strong>
+            <p>Ciudad de México, México</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Correo electrónico</strong>
+            <p>ramirezcalixtodiana@gmail.com<br>calixtoyuritzi@calixto.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Telefonos</strong>
+            <p>+52 271.243.21.08<br>+52.555.2013.088</p>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/yuritzicalixto/"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/calixtoyuritzi/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/calixtoyuritzi/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@calixtoyuritzi"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+
+  <!-- Menu -->
+  <script src="./assets/js/app.js"></script>
+  
+</body>
+</html>
